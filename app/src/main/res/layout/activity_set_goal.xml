@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Titel -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Abschnitt: Ziel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ziel"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Aktuelles Ziel anzeigen -->
+    <TextView
+        android:id="@+id/currentGoalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dein Aktuelles Ziel"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/currentGoalEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:enabled="false"
+        android:backgroundTint="#000000"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <!-- Neues Ziel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dein neues Ziel"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Eingabe für neues Ziel -->
+    <EditText
+        android:id="@+id/newGoalEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:backgroundTint="#000000"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <!-- Weiter Button -->
+    <Button
+        android:id="@+id/saveGoalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:text="Weiter"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>

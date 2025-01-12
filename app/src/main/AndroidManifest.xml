@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StepTracker">
+
+        <!-- Login-Auswahlseite: Startseite der App -->
+        <activity
+            android:name=".LoginSelectionActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login-Seite -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
+        <!-- Registrierungs-Seite -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+
+        <!-- Schrittanzeige-Seite -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Ziel ändern Seite -->
+        <activity
+            android:name=".SetGoalActivity"
+            android:exported="true" />
+
+        <!-- Wochenübersicht -->
+        <activity
+            android:name=".WeekOverviewActivity"
+            android:exported="true" />
+
+        <!-- Monatsübersicht -->
+        <activity
+            android:name=".MonthOverviewActivity"
+            android:exported="true" />
+    </application>
+</manifest>
