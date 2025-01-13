@@ -17,10 +17,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private SensorManager sensorManager;
     private Sensor stepCounterSensor;
-    private int stepCount = 0;
-    private int dailyGoal = 10000; // Standardziel
+    public int stepCount = 0;
+    public int dailyGoal = 10000; // Standardziel
     private TextView goalTextView;
     private Button changeGoalButton, weekOverviewButton, monthOverviewButton, logoutButton;
+
+    public String getUpdatedGoalText() {
+        return stepCount + " von " + dailyGoal + " Schritten erreicht";
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,4 +137,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private void updateGoalText() {
         goalTextView.setText(stepCount + " von " + dailyGoal + " Schritten erreicht");
     }
+
+
 }

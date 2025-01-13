@@ -66,7 +66,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return exists;
     }
     // Methode zum Speichern oder Aktualisieren des Ziels
-    public void saveDailyGoal(int goal) {
+    public boolean saveDailyGoal(int goal) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("dailyGoal", goal);
@@ -76,6 +76,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (rows == 0) {
             db.insert("goal_data", null, values);
         }
+        return false;
     }
 
     // Methode zum Abrufen des gespeicherten Ziels

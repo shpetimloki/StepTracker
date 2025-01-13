@@ -6,6 +6,9 @@ espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 playServicesFitness = "21.2.0"
+preference = "1.2.1"
+core = "1.6.1"
+mockitoCore = "5.15.2"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -14,6 +17,9 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 play-services-fitness = { group = "com.google.android.gms", name = "play-services-fitness", version.ref = "playServicesFitness" }
+preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+core = { group = "androidx.test", name = "core", version.ref = "core" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
